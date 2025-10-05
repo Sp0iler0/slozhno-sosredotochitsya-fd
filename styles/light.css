@@ -11,8 +11,8 @@
   --secondary-color: #35343040;
 }
 
-:root.theme-light .decor { 
-  display: none; 
+:root.theme-light .decor {
+  display: none;
 }
 
 /* Автовыбор по системной настройке */
@@ -30,7 +30,7 @@
     --secondary-color: #35343040;
   }
 
-  .decor { 
-    display: none; 
+  .decor {
+    display: none;
   }
 }
