@@ -24,6 +24,7 @@
     --bg-image: url(../images/cover-image-dark.png);
     --secondary-color: #ff007040;
   }
+  
   .decor { 
     display: block; 
   }

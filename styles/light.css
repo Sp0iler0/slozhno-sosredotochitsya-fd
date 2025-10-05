@@ -29,8 +29,8 @@
     --bg-image: url(../images/cover-image-light.png);
     --secondary-color: #35343040;
   }
+
   .decor { 
     display: none; 
   }
-  
 }

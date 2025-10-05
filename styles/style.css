@@ -544,22 +544,3 @@
     }
   }
 }
-
-
-.header__theme-menu-button:hover {
-  border-color: color-mix(in oklab, currentColor 40%, transparent);
-}
-
-.header__theme-menu-button:focus-visible {
-  outline: none;
-  border-block-end: 1px solid currentColor;
-}
-
-a.section__article-text-link:hover {
-  border-bottom: 1px solid currentColor;
-}
-
-a.section__article-text-link:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 2px;
-}
