@@ -80,6 +80,7 @@
   pointer-events: none;
 }
 
+/*относится к REC*/
 .decor {
   position: absolute;
   right: 20px;
