@@ -1,14 +1,5 @@
-:root.theme-dark {
-  --heading-text: #db00ff;
-  --section-title-color: #ff0070;
-  --bg-color: #000028;
-  --accent-color: #ff0070;
-  --text-color: #f1b2ce;
-  --subtitle-color: #000028;
-  --border-color: #ff0070;
-  --border-bottom: #f1b2ce;
-  --bg-image: url(../images/cover-image-dark.png);
-  --secondary-color: #ff007040;
+:root.theme-dark .decor {
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +17,20 @@
   }
 
   .decor {
-    display: block;
+    display: block; /* остаётся для «авто» */
   }
 }
 
+/* переменные для ручной тёмной темы */
+:root.theme-dark {
+  --heading-text: #db00ff;
+  --section-title-color: #ff0070;
+  --bg-color: #000028;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --subtitle-color: #000028;
+  --border-color: #ff0070;
+  --border-bottom: #f1b2ce;
+  --bg-image: url(../images/cover-image-dark.png);
+  --secondary-color: #ff007040;
+}

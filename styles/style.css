@@ -242,7 +242,8 @@
   margin-block-end: 63px;
 }
 
-.section:last-of-type .section__image {
+/* ГАЛЕРЕЯ (ранее .section:last-of-type) */
+.section--gallery .section__image {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -251,17 +252,17 @@
   height: 100%;
 }
 
-.section:last-of-type .section__image:first-of-type,
-.section:last-of-type .section__image:last-of-type {
+/* были :first-of-type / :last-of-type — заменены на модификатор элемента */
+.section--gallery .section__image--wide {
   grid-column: span 2;
 }
 
-.section:last-of-type .section__image:nth-of-type(2),
-.section:last-of-type .section__image:nth-of-type(3) {
+/* были nth-of-type(2)/(3) — заменены на модификатор элемента */
+.section--gallery .section__image--tall {
   grid-row: span 2;
 }
 
-.section:last-of-type {
+.section--gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -291,14 +292,15 @@
   gap: 20px;
 }
 
-.section:first-of-type,
-.section:nth-of-type(3) {
+/* ТЕКСТОВЫЕ СЕКЦИИ (ранее .section:first-of-type, .section:nth-of-type(3)) */
+.section--articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.section:last-of-type .section__title {
+/* Заголовок галереи (ранее .section:last-of-type .section__title) */
+.section--gallery .section__title {
   grid-column: 1/-1;
   width: 100%;
   margin: 0;
@@ -411,11 +413,12 @@
     margin-block-end: 50px;
   }
 
-  .section:nth-of-type(2) .section__title {
+  /* ранее .section:nth-of-type(2) ... */
+  .section--list .section__title {
     width: 100%;
   }
 
-  .section:nth-of-type(2) .section__article-list {
+  .section--list .section__article-list {
     justify-content: space-between;
     margin-block-end: 50px;
     gap: 20px;
@@ -424,34 +427,34 @@
     flex-direction: column;
   }
 
-  .section:nth-of-type(2) .section__article-item {
+  .section--list .section__article-item {
     flex: 1 0 auto;
     width: 103%;
   }
 
-  .section:first-of-type .section__title,
-  .section:nth-of-type(3) .section__title {
+  /* ранее .section:first-of-type / .section:nth-of-type(3) */
+  .section--articles .section__title {
     width: 100%;
     margin-bottom: 20px;
     max-width: 400px;
   }
 
-  .section:first-of-type .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
+  .section--articles .section__article-list {
     width: 100%;
     margin-block-end: 50px;
   }
 
-  .section:last-of-type .section__image {
+  /* ранее .section:last-of-type ... */
+  .section--gallery .section__image {
     width: 100%;
     height: auto;
   }
 
-  .section:last-of-type .section__image-container {
+  .section--gallery .section__image-container {
     width: 100px;
   }
 
-  .section:last-of-type {
+  .section--gallery {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -512,16 +515,19 @@
     flex-wrap: wrap;
   }
 
-  .section:first-of-type .section__title,
-  .section:nth-of-type(3) .section__title {
+  /* ранее .section:first-of-type / .section:nth-of-type(3) */
+  .section--articles .section__title {
     max-width: 230px;
   }
 
-  .section:first-of-type .section__article-list,
-  .section:nth-of-type(3) .section__article-list {
+  .section--articles .section__article-list {
     width: 64%;
   }
-  .section:nth-of-type(2) .section__article-item {
+
+  /* ранее .section:nth-of-type(2) .section__article-item */
+  .section--list .section__article-item {
+  }
+  .section--list .section__article-item {
     flex: 1 0 auto;
     width: 100%;
   }
