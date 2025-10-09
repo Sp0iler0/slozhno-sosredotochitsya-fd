@@ -526,8 +526,6 @@
 
   /* ранее .section:nth-of-type(2) .section__article-item */
   .section--list .section__article-item {
-  }
-  .section--list .section__article-item {
     flex: 1 0 auto;
     width: 100%;
   }
